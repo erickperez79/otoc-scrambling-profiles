@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite as below."
+type: software
+title: "Spatial Scrambling Profiles and System-Size Scaling of the Scrambling Residual Omega"
+authors:
+  - family-names: Perez-Eugenio
+    given-names: E. F.
+    orcid: https://orcid.org/0009-0006-3228-4847
+    email: erick.fpe79@gmail.com
+    affiliation: "Independent Researcher, León, Guanajuato, Mexico"
+date-released: 2026-03-19
+repository-code: https://github.com/erickperez79/otoc-finite-size-scaling
+url: https://osf.io/6z5sb/
+license: MIT
+keywords:
+  - quantum scrambling
+  - out-of-time-order correlators
+  - OTOC
+  - quantum information
+  - IBM Quantum
+  - kicked Ising model
+  - SYK model
+  - finite-size scaling
+  - quantum hardware
+preferred-citation:
+  type: article
+  title: "Spatial Scrambling Profiles and System-Size Scaling of the Scrambling Residual Omega across Dynamical Regimes: Exact Simulation and Cross-Platform Quantum Hardware Validation"
+  authors:
+    - family-names: Perez-Eugenio
+      given-names: E. F.
+      orcid: https://orcid.org/0009-0006-3228-4847
+  year: 2026
+  notes: "Preprint. arXiv submission in preparation."

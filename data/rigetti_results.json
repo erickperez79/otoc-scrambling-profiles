@@ -1,0 +1,424 @@
+[
+  {
+    "label": "KI_chaotic_N4_d1_mag",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 1,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.5458984375,
+      "1": 0.5400390625,
+      "2": -0.580078125,
+      "3": 0.58984375
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/b03b7adb-b832-4a17-9739-0e0478cceaf9"
+  },
+  {
+    "label": "KI_chaotic_N4_d1_echo",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 1,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.0771484375,
+      "1": 0.4326171875,
+      "2": 0.958984375,
+      "3": 0.9873046875
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/47d04a2f-aba5-4c64-86a5-bd8558c71988"
+  },
+  {
+    "label": "KI_chaotic_N4_d2_mag",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 2,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.443359375,
+      "1": 0.111328125,
+      "2": 0.267578125,
+      "3": -0.052734375
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/81a9d76f-effd-4a9a-a007-44e9a62cf69f"
+  },
+  {
+    "label": "KI_chaotic_N4_d2_echo",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 2,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.4541015625,
+      "1": 0.306640625,
+      "2": 0.3720703125,
+      "3": 0.9658203125
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/a6866a3a-2c58-4069-ab6b-d0b4863b670e"
+  },
+  {
+    "label": "KI_chaotic_N4_d3_mag",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 3,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.3564453125,
+      "1": -0.158203125,
+      "2": 0.1494140625,
+      "3": 0.46875
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/cbed2ef2-9fa3-4bcf-827d-8866cd6f6eed"
+  },
+  {
+    "label": "KI_chaotic_N4_d3_echo",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 3,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.125,
+      "1": -0.033203125,
+      "2": -0.01171875,
+      "3": 0.7431640625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/04371836-dce8-4cb2-bd69-9cfac8abc386"
+  },
+  {
+    "label": "KI_chaotic_N4_d5_mag",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 5,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.1123046875,
+      "1": 0.166015625,
+      "2": -0.1572265625,
+      "3": 0.33203125
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/be149014-5c5f-47b9-9812-ec9bb47e2170"
+  },
+  {
+    "label": "KI_chaotic_N4_d5_echo",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 5,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.0322265625,
+      "1": 0.0595703125,
+      "2": -0.0693359375,
+      "3": 0.1884765625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/7f73f16c-1b63-4671-8321-b14e618397af"
+  },
+  {
+    "label": "KI_chaotic_N4_d8_mag",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 8,
+    "type": "mag",
+    "magnetizations": {
+      "0": -0.0107421875,
+      "1": 0.0341796875,
+      "2": 0.052734375,
+      "3": -0.08984375
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/e1f47742-6e34-47f7-a761-8dd973d1a650"
+  },
+  {
+    "label": "KI_chaotic_N4_d8_echo",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 8,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.1201171875,
+      "1": -0.0048828125,
+      "2": -0.029296875,
+      "3": 0.1494140625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/62a90926-11f9-46bb-8b55-1dab06abac3d"
+  },
+  {
+    "label": "KI_chaotic_N4_d10_mag",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 10,
+    "type": "mag",
+    "magnetizations": {
+      "0": -0.060546875,
+      "1": 0.0654296875,
+      "2": 0.0,
+      "3": -0.0595703125
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/89153f99-3c5c-4726-868b-e55783f1087b"
+  },
+  {
+    "label": "KI_chaotic_N4_d10_echo",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 10,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.068359375,
+      "1": -0.056640625,
+      "2": -0.05078125,
+      "3": 0.0166015625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/4a91609c-a076-4a9f-b2dc-c80db367cc94"
+  },
+  {
+    "label": "KI_chaotic_N8_d1_mag",
+    "model": "KI_chaotic",
+    "N": 8,
+    "d": 1,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.5693359375,
+      "1": 0.5048828125,
+      "2": 0.525390625,
+      "3": 0.5771484375,
+      "4": 0.5087890625,
+      "5": 0.5771484375,
+      "6": 0.51953125,
+      "7": 0.1572265625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/469a4b35-d6ac-4e5c-b37f-8426fa592cea"
+  },
+  {
+    "label": "KI_chaotic_N8_d1_echo",
+    "model": "KI_chaotic",
+    "N": 8,
+    "d": 1,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.0791015625,
+      "1": 0.369140625,
+      "2": 0.990234375,
+      "3": 0.8818359375,
+      "4": 0.947265625,
+      "5": 0.9697265625,
+      "6": 0.84765625,
+      "7": 0.974609375
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/158b6b7d-da5d-43ab-a559-c2e5683ec3d3"
+  },
+  {
+    "label": "KI_chaotic_N8_d2_mag",
+    "model": "KI_chaotic",
+    "N": 8,
+    "d": 2,
+    "type": "mag",
+    "magnetizations": {
+      "0": -0.109375,
+      "1": -0.3232421875,
+      "2": -0.1591796875,
+      "3": 0.408203125,
+      "4": 0.240234375,
+      "5": 0.4150390625,
+      "6": 0.3193359375,
+      "7": 0.5498046875
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/14e683b7-d00a-46c8-a983-66e2034a7cab"
+  },
+  {
+    "label": "KI_chaotic_N8_d2_echo",
+    "model": "KI_chaotic",
+    "N": 8,
+    "d": 2,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.42578125,
+      "1": -0.3935546875,
+      "2": 0.482421875,
+      "3": 0.9873046875,
+      "4": 0.951171875,
+      "5": 0.9658203125,
+      "6": 0.9873046875,
+      "7": 0.9716796875
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/97ec6269-5ba8-4996-bb83-0f43a17c1877"
+  },
+  {
+    "label": "KI_chaotic_N8_d3_mag",
+    "model": "KI_chaotic",
+    "N": 8,
+    "d": 3,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.2451171875,
+      "1": -0.1015625,
+      "2": 0.1337890625,
+      "3": 0.1123046875,
+      "4": 0.0107421875,
+      "5": 0.2734375,
+      "6": 0.14453125,
+      "7": 0.4248046875
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/cfa0d683-f2ef-42bc-a074-7b17af70f798"
+  },
+  {
+    "label": "KI_chaotic_N8_d3_echo",
+    "model": "KI_chaotic",
+    "N": 8,
+    "d": 3,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.14453125,
+      "1": -0.0146484375,
+      "2": -0.03515625,
+      "3": 0.7373046875,
+      "4": 0.9580078125,
+      "5": 0.970703125,
+      "6": 0.8525390625,
+      "7": 0.9853515625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/f901a2f5-6b18-4c97-9f88-737b3c1e49eb"
+  },
+  {
+    "label": "KI_chaotic_N8_d5_mag",
+    "model": "KI_chaotic",
+    "N": 8,
+    "d": 5,
+    "type": "mag",
+    "magnetizations": {
+      "0": -0.021484375,
+      "1": -0.2451171875,
+      "2": 0.2099609375,
+      "3": -0.021484375,
+      "4": -0.080078125,
+      "5": 0.1591796875,
+      "6": 0.14453125,
+      "7": 0.2998046875
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/5ffa5192-01c3-4f32-a799-145533e00269"
+  },
+  {
+    "label": "KI_chaotic_N8_d5_echo",
+    "model": "KI_chaotic",
+    "N": 8,
+    "d": 5,
+    "type": "echo",
+    "magnetizations": {
+      "0": 0.1533203125,
+      "1": 0.0341796875,
+      "2": 0.0439453125,
+      "3": 0.181640625,
+      "4": -0.1611328125,
+      "5": -0.8203125,
+      "6": 0.595703125,
+      "7": 0.431640625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/386a2cbc-eb92-4bcd-b845-3acb52cefe29"
+  },
+  {
+    "label": "Integrable_N4_d1_mag",
+    "model": "Integrable",
+    "N": 4,
+    "d": 1,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.5166015625,
+      "1": 0.5751953125,
+      "2": 0.5224609375,
+      "3": 0.47265625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/d559608c-74e3-484d-a4f6-4a0d0f9c36ef"
+  },
+  {
+    "label": "Integrable_N4_d1_echo",
+    "model": "Integrable",
+    "N": 4,
+    "d": 1,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.3759765625,
+      "1": 0.98828125,
+      "2": 0.951171875,
+      "3": 0.8916015625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/256cf57c-3781-45b7-a690-5574eb0dc7f1"
+  },
+  {
+    "label": "Integrable_N4_d3_mag",
+    "model": "Integrable",
+    "N": 4,
+    "d": 3,
+    "type": "mag",
+    "magnetizations": {
+      "0": -0.8671875,
+      "1": -0.90234375,
+      "2": -0.8447265625,
+      "3": -0.8779296875
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/521ee8e6-0fc9-4085-985f-3521583b748d"
+  },
+  {
+    "label": "Integrable_N4_d3_echo",
+    "model": "Integrable",
+    "N": 4,
+    "d": 3,
+    "type": "echo",
+    "magnetizations": {
+      "0": 0.923828125,
+      "1": 0.9951171875,
+      "2": 0.9453125,
+      "3": 0.87890625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/64a1bc80-6f9f-4bf7-92c3-649f44cadf09"
+  },
+  {
+    "label": "Integrable_N4_d5_mag",
+    "model": "Integrable",
+    "N": 4,
+    "d": 5,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.248046875,
+      "1": 0.30859375,
+      "2": 0.251953125,
+      "3": 0.197265625
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/6a4b797c-03a9-4263-9728-d1ce53836ac2"
+  },
+  {
+    "label": "Integrable_N4_d5_echo",
+    "model": "Integrable",
+    "N": 4,
+    "d": 5,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.7314453125,
+      "1": 0.9951171875,
+      "2": 0.9599609375,
+      "3": 0.888671875
+    },
+    "n_shots": 2048,
+    "task_arn": "arn:aws:braket:us-west-1:266859254560:quantum-task/3f85b707-aa31-4d79-9b8e-0446bfd8bd30"
+  }
+]

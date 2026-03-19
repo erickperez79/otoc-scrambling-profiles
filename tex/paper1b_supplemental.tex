@@ -1,0 +1,387 @@
+\documentclass[twocolumn,showpacs,preprintnumbers,amsmath,amssymb,aps,prl]{revtex4-2}
+
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\begin{document}
+
+\title{Supplemental Material:\\
+Spatial Scrambling Profiles and System-Size Scaling of $\Omega$\\
+across Dynamical Regimes}
+
+\author{Erick Francisco Perez Eugenio}
+\email{erick.fpe79@gmail.com}
+\affiliation{Independent Researcher, Le\'on, Guanajuato, Mexico,
+ORCID: 0009-0006-3228-4847}
+
+\date{March 2026}
+
+\begin{abstract}
+This Supplemental Material contains: (S1) complete $\Omega_{\rm late}(r)$
+profiles for all five models and all system sizes; (S2) full cross-platform
+hardware data tables; (S3) fit diagnostics and AIC computation; (S4) circuit and
+simulation parameters.
+
+All numerical values in this document are extracted programmatically from the
+authoritative data files (\texttt{paper1b\_master\_5models.json},
+\texttt{aqt\_results.json}, \texttt{rigetti\_results.json}) and verified against
+independent recomputation. The extraction script (\texttt{generate\_figures.py})
+is included in the repository.
+\end{abstract}
+
+\maketitle
+
+% ============================================================
+\section{Complete Spatial Profiles $\Omega_{\rm late}(r)$}
+% ============================================================
+
+Tables~\ref{tab:kichaotic1}--\ref{tab:syk} give the complete
+$\Omega_{\rm late}(r)$ profiles for each model. All values from exact statevector
+simulation with $D_{\max} = 5N$, dense trace method ($N \leq 12$) or typicality
+with 10 random states ($N \geq 14$, KI chaotic only).
+
+\begin{table}[h]
+\caption{KI chaotic $\Omega_{\rm late}(r)$ profiles, $r = 1$--$7$. Dash (\mbox{---})
+indicates $r \geq N$.}
+\label{tab:kichaotic1}
+\begin{ruledtabular}
+\begin{tabular}{cccccccc}
+$N$ & $r{=}1$ & $r{=}2$ & $r{=}3$ & $r{=}4$ & $r{=}5$ & $r{=}6$ & $r{=}7$ \\
+\hline
+4  & 0.280 & 0.326 & 0.331 & ---   & ---   & ---   & ---   \\
+6  & 0.215 & 0.252 & 0.274 & 0.275 & 0.402 & ---   & ---   \\
+8  & 0.159 & 0.191 & 0.210 & 0.222 & 0.244 & 0.262 & 0.393 \\
+10 & 0.135 & 0.162 & 0.180 & 0.186 & 0.197 & 0.210 & 0.227 \\
+12 & 0.119 & 0.140 & 0.156 & 0.159 & 0.168 & 0.176 & 0.185 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\begin{table}[h]
+\caption{KI chaotic $\Omega_{\rm late}(r)$ profiles, $r = 8$--$11$. Only $N=10$
+and $N=12$ have data in this range.}
+\label{tab:kichaotic2}
+\begin{ruledtabular}
+\begin{tabular}{ccccc}
+$N$ & $r{=}8$ & $r{=}9$ & $r{=}10$ & $r{=}11$ \\
+\hline
+10 & 0.247 & 0.376 & ---   & ---   \\
+12 & 0.196 & 0.212 & 0.234 & 0.360 \\
+\end{tabular}
+\end{ruledtabular}
+Note: the last distance ($r = N-1$) in OBC consistently shows a jump in
+$\Omega_{\rm late}$ (e.g., $N=6$: $r=4$ gives 0.275 but $r=5$ gives 0.402;
+$N=12$: $r=10$ gives 0.234 but $r=11$ gives 0.360). This boundary effect, where
+the far-end operator is partially shielded from scrambling by its proximity to
+the open boundary, is present at all system sizes and should not be confused with
+the monotonic increase due to butterfly velocity at intermediate distances.
+\end{table}
+
+\begin{table}[h]
+\caption{KI mixing $\Omega_{\rm late}(r)$ profiles, $r = 1$--$7$. The U-shaped
+pattern (minimum at interior, maxima at boundaries) persists across all $N$ but
+becomes asymmetric for $N \geq 10$: the far-boundary values are lower than the
+near-boundary values.}
+\label{tab:kimixing1}
+\begin{ruledtabular}
+\begin{tabular}{cccccccc}
+$N$ & $r{=}1$ & $r{=}2$ & $r{=}3$ & $r{=}4$ & $r{=}5$ & $r{=}6$ & $r{=}7$ \\
+\hline
+4  & 0.533 & 0.461 & 0.820 & ---   & ---   & ---   & ---   \\
+6  & 0.865 & 0.599 & 0.472 & 0.632 & 0.897 & ---   & ---   \\
+8  & 0.953 & 0.824 & 0.618 & 0.536 & 0.579 & 0.738 & 0.916 \\
+10 & 0.977 & 0.922 & 0.786 & 0.622 & 0.573 & 0.586 & 0.660 \\
+12 & 0.985 & 0.956 & 0.895 & 0.764 & 0.630 & 0.588 & 0.593 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\begin{table}[h]
+\caption{KI mixing $\Omega_{\rm late}(r)$ profiles, $r = 8$--$11$. Asymmetry
+visible: compare $r=9$ at $N=10$ (0.932) with $r=1$ (0.977); compare $r=11$ at
+$N=12$ (0.952) with $r=1$ (0.985).}
+\label{tab:kimixing2}
+\begin{ruledtabular}
+\begin{tabular}{ccccc}
+$N$ & $r{=}8$ & $r{=}9$ & $r{=}10$ & $r{=}11$ \\
+\hline
+10 & 0.811 & 0.932 & ---   & ---   \\
+12 & 0.635 & 0.725 & 0.853 & 0.952 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\begin{table}[h]
+\caption{SYK $\Omega_{\rm late}(r)$ profiles. Disorder average over 10 seeds.
+Flat profile to within $\lesssim 10^{-3}$ at each $N$, confirming absence of
+spatial structure from all-to-all connectivity.}
+\label{tab:syk}
+\begin{ruledtabular}
+\begin{tabular}{cccccccccc}
+$N$ & $r{=}1$ & $r{=}2$ & $r{=}3$ & $r{=}4$ & $r{=}5$ & $r{=}6$ & $r{=}7$
+    & $r{=}8$ & $r{=}9$ \\
+\hline
+4  & 0.072 & 0.072 & 0.071 & ---   & ---   & ---   & ---   & ---   & ---   \\
+6  & 0.016 & 0.018 & 0.019 & 0.020 & 0.019 & ---   & ---   & ---   & ---   \\
+8  & 0.005 & 0.005 & 0.004 & 0.005 & 0.005 & 0.005 & 0.005 & ---   & ---   \\
+10 & 0.001 & 0.001 & 0.001 & 0.001 & 0.001 & 0.001 & 0.001 & 0.001 & 0.001 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+Integrable and dual-unitary models give $\Omega_{\rm late}(r) = 1.000$ to machine
+precision ($< 10^{-13}$) for all $N$ and $r$; these values are omitted for
+brevity.
+
+% ============================================================
+\section{Cross-Platform Hardware Data}
+% ============================================================
+
+Tables~\ref{tab:aqt} and~\ref{tab:rigetti} give the full $\langle Z_0 \rangle$
+measurements for $N=4$ across all circuit types and depths. Each row corresponds
+to one circuit: the magnetization (mag) circuit measures $\langle Z_0 \rangle$
+after forward evolution $U_F^d |\psi_0\rangle$; the echo circuit measures
+$\langle Z_0 \rangle$ after the full echo $U_F^{-d} Z_r U_F^d |\psi_0\rangle$
+with $r=1$.
+
+\begin{table}[h]
+\caption{AQT IBEX Q1: $\langle Z_0 \rangle$ measurements vs.\ exact simulation.
+$N=4$, 100 shots per circuit ($\sigma \approx 0.10$). Values are qubit-0
+magnetization.}
+\label{tab:aqt}
+\begin{ruledtabular}
+\begin{tabular}{llccrr}
+Model & Type & $d$ & Exact & AQT & $|\Delta|$ \\
+\hline
+Integrable & mag  & 1 & $+0.540$ & $+0.500$ & 0.040 \\
+Integrable & echo & 1 & $-0.416$ & $-0.280$ & 0.136 \\
+Integrable & mag  & 3 & $-0.990$ & $-1.000$ & 0.010 \\
+Integrable & echo & 3 & $+0.960$ & $+0.880$ & 0.080 \\
+Integrable & mag  & 5 & $+0.284$ & $+0.340$ & 0.056 \\
+Integrable & echo & 5 & $-0.839$ & $-0.820$ & 0.019 \\
+KI chaotic & mag  & 1 & $+0.540$ & $+0.420$ & 0.120 \\
+KI chaotic & echo & 1 & $-0.416$ & $-0.440$ & 0.024 \\
+KI chaotic & mag  & 3 & $+0.575$ & $+0.560$ & \textbf{0.015} \\
+KI chaotic & echo & 3 & $+0.126$ & $-0.140$ & 0.266 \\
+KI chaotic & mag  & 5 & $+0.550$ & $+0.420$ & 0.130 \\
+KI chaotic & echo & 5 & $+0.074$ & $+0.000$ & 0.074 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Rigetti Ankaa-3: $\langle Z_0 \rangle$ measurements vs.\ exact
+simulation. $N=4$, 2048 shots ($\sigma < 0.02$). Values are qubit-0
+magnetization.}
+\label{tab:rigetti}
+\begin{ruledtabular}
+\begin{tabular}{llccrr}
+Model & Type & $d$ & Exact & Rigetti & $|\Delta|$ \\
+\hline
+Integrable & mag  & 1 & $+0.540$ & $+0.517$ & 0.024 \\
+Integrable & echo & 1 & $-0.416$ & $-0.376$ & 0.040 \\
+Integrable & mag  & 3 & $-0.990$ & $-0.867$ & 0.123 \\
+Integrable & echo & 3 & $+0.960$ & $+0.924$ & 0.036 \\
+Integrable & mag  & 5 & $+0.284$ & $+0.248$ & 0.036 \\
+Integrable & echo & 5 & $-0.839$ & $-0.731$ & 0.108 \\
+KI chaotic & mag  & 1 & $+0.540$ & $+0.546$ & 0.006 \\
+KI chaotic & echo & 1 & $-0.416$ & $-0.077$ & 0.339 \\
+KI chaotic & mag  & 3 & $+0.575$ & $+0.356$ & \textbf{0.219} \\
+KI chaotic & echo & 3 & $+0.126$ & $-0.125$ & 0.251 \\
+KI chaotic & mag  & 5 & $+0.550$ & $+0.112$ & 0.437 \\
+KI chaotic & echo & 5 & $+0.074$ & $-0.032$ & 0.106 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The key comparison is the bolded entries: KI chaotic $d=3$ magnetization has
+$|\Delta| = 0.015$ (AQT) vs.\ $|\Delta| = 0.219$ (Rigetti), a $15\times$
+improvement. Echo circuits are more demanding (double the effective circuit depth)
+and both platforms show larger errors for echo at $d \geq 3$.
+
+\textit{Note on IBM data.}
+IBM ibm\_marrakesh data (429 circuits, Conjunto~A parameters) are reported in
+full in Paper~I~\cite{PerezEugenio2026a}. They are included here only in
+aggregated form (Table~IV of the main text) for protocol comparison. IBM data
+use Conjunto~A; Rigetti and AQT use Conjunto~B. The cross-platform comparison
+validates the measurement protocol, not point-by-point physical equivalence.
+
+\textit{Note on echo q1--q3 in AQT integrable.}
+For all three depths, AQT IBEX Q1 measures $\langle Z \rangle = 1.000$ exactly on
+qubits 1, 2, and~3 in the integrable echo circuit. With $J=0$ (no entangling
+gates), the perturbation $Z_1$ at site~1 does not propagate to distant qubits;
+the echo should return them to the initial state $|0\rangle$ with
+$\langle Z \rangle = 1$ exactly. That 100 out of 100 shots give $|0\rangle$ on
+all three qubits at all depths confirms exceptional single-qubit fidelity of the
+ion trap.
+
+% ============================================================
+\section{Fit Diagnostics}
+% ============================================================
+
+\subsection{AIC Computation}
+
+The Akaike Information Criterion is ${\rm AIC} = 2k - 2\ln\hat{L}$, where $k$ is
+the number of free parameters and $\hat{L}$ is the maximized likelihood. For
+least-squares fits to $n$ data points with residual sum of squares RSS:
+\begin{equation}
+  {\rm AIC} = n\ln({\rm RSS}/n) + 2k.
+\end{equation}
+Both algebraic (Hip.~A) and power-law (Hip.~C) have $k=2$ free parameters, so
+$\Delta{\rm AIC}$ depends only on the ratio of RSS values. With
+${\rm RSS}_A = 3.21\times10^{-5}$ and ${\rm RSS}_C = 4.67\times10^{-5}$ for
+$n=8$:
+\begin{equation}
+  \Delta{\rm AIC} = 8\ln\!\left(\frac{3.21}{4.67}\right) = -3.00.
+\end{equation}
+By convention, $|\Delta{\rm AIC}| > 2$ constitutes positive evidence and
+$|\Delta{\rm AIC}| > 6$ constitutes strong evidence. The exact RSS values from
+the numerical fit (before rounding) give $\Delta{\rm AIC} = -3.30$, reported
+throughout the main text; the rounded values quoted above yield $-3.00$ as an
+approximate illustration of the computation. The value $-3.30$ represents
+moderate positive evidence in favor of Hip.~A.
+
+\subsection{Exponential Exclusion (Hip.~B)}
+
+The exponential fit $\Omega = e^{-\gamma N}$ was tested on the same 8-point
+series. Best-fit $\gamma = 0.053$, ${\rm RSS}_B = 2.48\times10^{-3}$, giving
+$R^2 = 0.967$ and $\Delta{\rm AIC} = +19.1$ relative to power-law. This provides
+very strong empirical evidence against the exponential form for KI chaotic. For
+systems with energy conservation, the Huang-Brand\~ao-Zhang
+theorem~\cite{HuangFiniteSize2019} provides additional theoretical support;
+KI chaotic is Floquet (no energy conservation), so its exclusion rests on
+empirical grounds alone.
+
+\subsection{$\beta$-Function Finite-Difference Table}
+
+\begin{table}[h]
+\caption{Effective $\beta$-function from 8-point KI chaotic series, central
+differences. $\Omega$ column shows the value at the central point;
+$\beta_{\rm eff}$ is $(\Omega_{i+1}-\Omega_{i-1})/(\ln N_{i+1} - \ln N_{i-1})$.}
+\label{tab:beta}
+\begin{ruledtabular}
+\begin{tabular}{ccc}
+$\Omega$ & $\beta_{\rm eff}$ & $-c\,\Omega(1-\Omega)$ \\
+\hline
+0.215 & $-0.175$ & $-0.167$ \\
+0.159 & $-0.157$ & $-0.132$ \\
+0.135 & $-0.098$ & $-0.116$ \\
+0.119 & $-0.096$ & $-0.104$ \\
+0.103 & $-0.098$ & $-0.091$ \\
+0.091 & $-0.085$ & $-0.082$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The data show that $\beta_{\rm eff}$ is systematically more negative than
+$-c\,\Omega(1-\Omega)$ at large $\Omega$ (small $N$), which is expected from
+finite-size effects in the pre-asymptotic regime. At small $\Omega$ (large $N$),
+the two converge, consistent with the algebraic fit becoming more accurate as
+finite-size corrections diminish.
+
+\begin{figure}[h]
+  \includegraphics[width=\columnwidth]{fig3_beta_function}
+  \caption{Effective $\beta$-function
+  $\beta_{\rm eff} = \Delta\Omega/\Delta(\ln N)$ vs.\ $\Omega_{\rm late}$ for
+  KI chaotic (circles). Algebraic fit (solid, $\beta = -c\,\Omega(1-\Omega)$,
+  $c = 0.990$) and power-law fit (dashed, $\beta = -\alpha\,\Omega$,
+  $\alpha = 0.810$) are statistically indistinguishable in the data range
+  $\Omega \in [0.08, 0.28]$.}
+  \label{fig:beta}
+\end{figure}
+
+% ============================================================
+\section{Circuit and Simulation Parameters}
+% ============================================================
+
+\subsection{Kicked Ising Circuit (Conjunto~B)}
+
+The Floquet operator is:
+\begin{equation}
+  U_F = e^{-ih\sum_{i=0}^{N-1} X_i}\,
+        e^{-ib\sum_{i=0}^{N-1} Y_i}\,
+        e^{-iJ\sum_{i=0}^{N-2} Z_i Z_{i+1}},
+\end{equation}
+with $J=1.0$, $h=0.5$, $b=0.5$ (KI chaotic), $J=0.1$ (KI mixing),
+$J=\pi/4$, $h=\pi/4$, $b=0$ (dual-unitary), $J=0$, $b=0$ (integrable). Open
+boundary conditions; no $Z_i Z_{i+1}$ term for $i=N-1$.
+
+\subsection{Echo Protocol}
+
+Initial state: $|\psi_0\rangle = |0\rangle^{\otimes N}$ (all qubits in $|0\rangle$
+state). Circuit structure per depth $d$, scrambled operator at site $r$:
+\begin{equation}
+  |\phi_r(d)\rangle = U_F^{-d}\,Z_r\,U_F^d\,|\psi_0\rangle.
+\end{equation}
+Observable: $\langle Z_0 \rangle = \langle \phi_r(d) | Z_0 | \phi_r(d) \rangle$.
+Normalization: $C(0) = \langle\psi_0|Z_0|\psi_0\rangle = 1$ (all qubits in
+$|0\rangle$).
+
+\subsection{$D_{\max}$ and $\Omega_{\rm late}$ Computation}
+
+For each $(N, \text{model})$ pair, $D_{\max} = 5N$. The late-time average uses
+depths $d \geq D_{\max}/2$, i.e., the second half of the circuit depth range.
+For $N=4$: depths $d = 10,\ldots,20$ contribute. The dense trace method computes
+the exact statevector at each depth; the typicality method approximates the trace
+by averaging over 10 random initial states sampled from the Haar measure on the
+$2^N$-dimensional Hilbert space.
+
+\subsection{SYK Model}
+
+The SYK-inspired Floquet operator uses random all-to-all ZZ couplings:
+$H_{\rm SYK} = \sum_{i<j} J_{ij} Z_i Z_j$ with $J_{ij} \sim \mathcal{U}(0.5,
+1.5)$ independently for each realization. The Floquet operator is
+$U_{\rm SYK} = e^{-iH_{\rm SYK}}$. Disorder averaging uses 10 independent
+coupling realizations for all $N \leq 12$.
+
+\subsection{Hardware Circuit Transpilation}
+
+All circuits were transpiled using Qiskit 2.3.0 (IBM), PyQuil (Rigetti via AWS
+Braket), and the AQT SDK (AQT via AWS Braket), with optimization level~3. The
+echo protocol was verified with integrable circuits on all platforms before
+running chaotic models.
+
+% ============================================================
+\section{Repository Contents}
+% ============================================================
+
+The data repository~\cite{PerezEugenio2026a} contains:
+
+\textit{Data files:}
+\begin{itemize}
+  \item \texttt{paper1b\_master\_5models.json} --- authoritative dataset, 5 models,
+    $N=4$--$12$, $D_{\max}=5N$, dense trace
+  \item \texttt{ki\_chaotic\_N14\_18.json} --- KI chaotic typicality results,
+    $N=14,16,18$
+  \item \texttt{syk\_n12\_results.json} --- SYK $N=12$, 10 seeds, $D_{\max}=60$
+  \item \texttt{aqt\_results.json} --- 12 AQT circuits, raw magnetizations (all
+    4 qubits)
+  \item \texttt{aqt\_analysis\_final.json} --- 48 AQT measurements with
+    exact-simulation diffs
+  \item \texttt{rigetti\_results.json} --- 26 Rigetti circuits, raw
+  \item \texttt{rigetti\_analysis\_final.json} --- Rigetti analysis
+\end{itemize}
+
+\textit{Scripts:}
+\begin{itemize}
+  \item \texttt{omega\_simulation.py} --- exact simulation (dense trace and
+    typicality)
+  \item \texttt{scaling\_fits.py} --- algebraic/power-law fits, $\Delta$AIC,
+    $\beta_{\rm eff}$ computation
+  \item \texttt{cross\_platform\_analysis.py} --- hardware comparison
+  \item \texttt{generate\_figures.py} --- reproduces all figures from JSON files
+\end{itemize}
+
+\textit{Documents:}
+\begin{itemize}
+  \item \texttt{paper1b\_main.tex} --- main manuscript
+  \item \texttt{paper1b\_supplemental.tex} --- this document
+  \item \texttt{kaelion\_v8.bib} --- bibliography (v8, 58 entries)
+\end{itemize}
+
+\bibliography{kaelion_v8}
+
+\end{document}

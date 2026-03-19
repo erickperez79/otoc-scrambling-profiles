@@ -1,0 +1,968 @@
+{
+  "provider": "Rigetti Ankaa-3",
+  "date": "2026-02-28",
+  "shots": 2048,
+  "total_circuits": 26,
+  "summary": {
+    "mean_diff_all": 0.24157122734512124,
+    "integrable_mean_diff": 0.06168809099326977,
+    "chaotic_d1_mean_diff": 0.1700361264512746,
+    "within_10pct": 0.375,
+    "within_20pct": 0.6102941176470589
+  },
+  "conclusion": "Hardware validates Floquet implementation via integrable control. Chaotic circuits reliable at d=1. Depth degradation consistent with IBM Paper 1 findings.",
+  "all_diffs": [
+    {
+      "label": "KI_chaotic_N4_d1_mag",
+      "q": 0,
+      "diff": 0.005596131631860235,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d1_mag",
+      "q": 1,
+      "diff": 0.000263243368139765,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d1_mag",
+      "q": 2,
+      "diff": 1.1203804308681398,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d1_mag",
+      "q": 3,
+      "diff": 0.049541444131860235,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d1_echo",
+      "q": 0,
+      "diff": 0.338998399047143,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d1_echo",
+      "q": 1,
+      "diff": 0.5673828125000004,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d1_echo",
+      "q": 2,
+      "diff": 0.041015625000000444,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d1_echo",
+      "q": 3,
+      "diff": 0.012695312500000444,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d2_mag",
+      "q": 0,
+      "diff": 0.3004993147921837,
+      "d": 2,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d2_mag",
+      "q": 1,
+      "diff": 0.036946058632199255,
+      "d": 2,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d2_mag",
+      "q": 2,
+      "diff": 0.19319605863219919,
+      "d": 2,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d2_mag",
+      "q": 3,
+      "diff": 0.7965930647921836,
+      "d": 2,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d2_echo",
+      "q": 0,
+      "diff": 0.9764291906841236,
+      "d": 2,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d2_echo",
+      "q": 1,
+      "diff": 0.13572456312831838,
+      "d": 2,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d2_echo",
+      "q": 2,
+      "diff": 0.6279296875000002,
+      "d": 2,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d2_echo",
+      "q": 3,
+      "diff": 0.03417968750000022,
+      "d": 2,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d3_mag",
+      "q": 0,
+      "diff": 0.21875549881440337,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d3_mag",
+      "q": 1,
+      "diff": 0.18981880829887146,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d3_mag",
+      "q": 2,
+      "diff": 0.1177983792011285,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d3_mag",
+      "q": 3,
+      "diff": 0.10645081131440326,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d3_echo",
+      "q": 0,
+      "diff": 0.25077132676728686,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d3_echo",
+      "q": 1,
+      "diff": 0.09044461271640888,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d3_echo",
+      "q": 2,
+      "diff": 0.5263311060616535,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d3_echo",
+      "q": 3,
+      "diff": 0.25683593750000067,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d5_mag",
+      "q": 0,
+      "diff": 0.4372316871935651,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d5_mag",
+      "q": 1,
+      "diff": 0.5042751952672287,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d5_mag",
+      "q": 2,
+      "diff": 0.18103300776722864,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d5_mag",
+      "q": 3,
+      "diff": 0.2175051246935651,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d5_echo",
+      "q": 0,
+      "diff": 0.10644355868768916,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d5_echo",
+      "q": 1,
+      "diff": 0.19799715165358184,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d5_echo",
+      "q": 2,
+      "diff": 0.3133515226959924,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d5_echo",
+      "q": 3,
+      "diff": 0.2880714502664963,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d8_mag",
+      "q": 0,
+      "diff": 0.4484613938101588,
+      "d": 8,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d8_mag",
+      "q": 1,
+      "diff": 0.18874577217498387,
+      "d": 8,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d8_mag",
+      "q": 2,
+      "diff": 0.20730045967498328,
+      "d": 8,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d8_mag",
+      "q": 3,
+      "diff": 0.5275629563101585,
+      "d": 8,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d8_echo",
+      "q": 0,
+      "diff": 0.1900126335566275,
+      "d": 8,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d8_echo",
+      "q": 1,
+      "diff": 0.06850572368289788,
+      "d": 8,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d8_echo",
+      "q": 2,
+      "diff": 0.227328571936697,
+      "d": 8,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d8_echo",
+      "q": 3,
+      "diff": 0.42610931950856157,
+      "d": 8,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d10_mag",
+      "q": 0,
+      "diff": 0.714438018870094,
+      "d": 10,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d10_mag",
+      "q": 1,
+      "diff": 0.15916420067438536,
+      "d": 10,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d10_mag",
+      "q": 2,
+      "diff": 0.09373451317438525,
+      "d": 10,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d10_mag",
+      "q": 3,
+      "diff": 0.7134614563700941,
+      "d": 10,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d10_echo",
+      "q": 0,
+      "diff": 0.314194531897254,
+      "d": 10,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d10_echo",
+      "q": 1,
+      "diff": 0.5290471709073508,
+      "d": 10,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d10_echo",
+      "q": 2,
+      "diff": 0.6538009144679505,
+      "d": 10,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N4_d10_echo",
+      "q": 3,
+      "diff": 0.6108447511971561,
+      "d": 10,
+      "N": 4
+    },
+    {
+      "label": "KI_chaotic_N8_d1_mag",
+      "q": 0,
+      "diff": 0.02903363163186068,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_mag",
+      "q": 1,
+      "diff": 0.035419493368139654,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_mag",
+      "q": 2,
+      "diff": 0.014911680868139543,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_mag",
+      "q": 3,
+      "diff": 0.03684613163186057,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_mag",
+      "q": 4,
+      "diff": 0.03151324336813932,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_mag",
+      "q": 5,
+      "diff": 0.036846131631860346,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_mag",
+      "q": 6,
+      "diff": 0.020771055868139654,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_mag",
+      "q": 7,
+      "diff": 0.38307574336814,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_echo",
+      "q": 0,
+      "diff": 0.3370452740471416,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_echo",
+      "q": 1,
+      "diff": 0.6308593750000036,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_echo",
+      "q": 2,
+      "diff": 0.009765625000003553,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_echo",
+      "q": 3,
+      "diff": 0.11816406250000355,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_echo",
+      "q": 4,
+      "diff": 0.05273437500000355,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_echo",
+      "q": 5,
+      "diff": 0.030273437500003553,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_echo",
+      "q": 6,
+      "diff": 0.15234375000000355,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d1_echo",
+      "q": 7,
+      "diff": 0.025390625000003553,
+      "d": 1,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_mag",
+      "q": 0,
+      "diff": 0.8532336897921831,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_mag",
+      "q": 1,
+      "diff": 0.39762425386780054,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_mag",
+      "q": 2,
+      "diff": 0.23356175386780081,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_mag",
+      "q": 3,
+      "diff": 0.3338210586321994,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_mag",
+      "q": 4,
+      "diff": 0.1658523086321995,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_mag",
+      "q": 5,
+      "diff": 0.3406569961321997,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_mag",
+      "q": 6,
+      "diff": 0.24495387113219957,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_mag",
+      "q": 7,
+      "diff": 0.19405400229218295,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_echo",
+      "q": 0,
+      "diff": 0.9481088781841226,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_echo",
+      "q": 1,
+      "diff": 0.5644707493716815,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_echo",
+      "q": 2,
+      "diff": 0.5175781249999988,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_echo",
+      "q": 3,
+      "diff": 0.012695312499998779,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_echo",
+      "q": 4,
+      "diff": 0.04882812499999878,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_echo",
+      "q": 5,
+      "diff": 0.03417968749999878,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_echo",
+      "q": 6,
+      "diff": 0.012695312499998779,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d2_echo",
+      "q": 7,
+      "diff": 0.02832031249999878,
+      "d": 2,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_mag",
+      "q": 0,
+      "diff": 0.33008362381440226,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_mag",
+      "q": 1,
+      "diff": 0.1331781832988716,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_mag",
+      "q": 2,
+      "diff": 0.12144458459800052,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_mag",
+      "q": 3,
+      "diff": 0.0999602095980006,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_mag",
+      "q": 4,
+      "diff": 0.0016022904019990895,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_mag",
+      "q": 5,
+      "diff": 0.2610930220980012,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_mag",
+      "q": 6,
+      "diff": 0.11291556670112876,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_mag",
+      "q": 7,
+      "diff": 0.15039612381440226,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_echo",
+      "q": 0,
+      "diff": 0.27030257676728553,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_echo",
+      "q": 1,
+      "diff": 0.07188992521640761,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_echo",
+      "q": 2,
+      "diff": 0.5497686060616516,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_echo",
+      "q": 3,
+      "diff": 0.26269531249999867,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_echo",
+      "q": 4,
+      "diff": 0.04199218749999867,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_echo",
+      "q": 5,
+      "diff": 0.029296874999998668,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_echo",
+      "q": 6,
+      "diff": 0.14746093749999867,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d3_echo",
+      "q": 7,
+      "diff": 0.014648437499998668,
+      "d": 3,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_mag",
+      "q": 0,
+      "diff": 0.6483542720321811,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_mag",
+      "q": 1,
+      "diff": 0.2614535066697032,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_mag",
+      "q": 2,
+      "diff": 0.3463410165896832,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_mag",
+      "q": 3,
+      "diff": 0.07332486475653736,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_mag",
+      "q": 4,
+      "diff": 0.1319186147565371,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_mag",
+      "q": 5,
+      "diff": 0.29555976658968325,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_mag",
+      "q": 6,
+      "diff": 0.12819493083029668,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_mag",
+      "q": 7,
+      "diff": 0.3270652095321813,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_echo",
+      "q": 0,
+      "diff": 0.13500177632288268,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_echo",
+      "q": 1,
+      "diff": 0.16411564224964997,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_echo",
+      "q": 2,
+      "diff": 0.1970710554294059,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_echo",
+      "q": 3,
+      "diff": 0.08948314138738434,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_echo",
+      "q": 4,
+      "diff": 0.9947650610721426,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_echo",
+      "q": 5,
+      "diff": 1.8203124999999991,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_echo",
+      "q": 6,
+      "diff": 0.4042968749999991,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "KI_chaotic_N8_d5_echo",
+      "q": 7,
+      "diff": 0.5683593749999991,
+      "d": 5,
+      "N": 8
+    },
+    {
+      "label": "Integrable_N4_d1_mag",
+      "q": 0,
+      "diff": 0.023700743368139765,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d1_mag",
+      "q": 1,
+      "diff": 0.034893006631860235,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d1_mag",
+      "q": 2,
+      "diff": 0.017841368368139876,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d1_mag",
+      "q": 3,
+      "diff": 0.06764605586813977,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d1_echo",
+      "q": 0,
+      "diff": 0.040170274047142296,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d1_echo",
+      "q": 1,
+      "diff": 0.01171875,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d1_echo",
+      "q": 2,
+      "diff": 0.048828125,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d1_echo",
+      "q": 3,
+      "diff": 0.1083984375,
+      "d": 1,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d3_mag",
+      "q": 0,
+      "diff": 0.12280499660044542,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d3_mag",
+      "q": 1,
+      "diff": 0.08764874660044542,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d3_mag",
+      "q": 2,
+      "diff": 0.14526593410044542,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d3_mag",
+      "q": 3,
+      "diff": 0.11206280910044542,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d3_echo",
+      "q": 0,
+      "diff": 0.03634216165036608,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d3_echo",
+      "q": 1,
+      "diff": 0.004882812500000222,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d3_echo",
+      "q": 2,
+      "diff": 0.05468750000000022,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d3_echo",
+      "q": 3,
+      "diff": 0.12109375000000022,
+      "d": 3,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d5_mag",
+      "q": 0,
+      "diff": 0.035615310463226135,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d5_mag",
+      "q": 1,
+      "diff": 0.024931564536773865,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d5_mag",
+      "q": 2,
+      "diff": 0.03170906046322597,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d5_mag",
+      "q": 3,
+      "diff": 0.08639656046322602,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d5_echo",
+      "q": 0,
+      "diff": 0.10762621657645244,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d5_echo",
+      "q": 1,
+      "diff": 0.004882812499999889,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d5_echo",
+      "q": 2,
+      "diff": 0.04003906249999989,
+      "d": 5,
+      "N": 4
+    },
+    {
+      "label": "Integrable_N4_d5_echo",
+      "q": 3,
+      "diff": 0.11132812499999989,
+      "d": 5,
+      "N": 4
+    }
+  ]
+}

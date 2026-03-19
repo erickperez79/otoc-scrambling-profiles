@@ -1,0 +1,182 @@
+[
+  {
+    "label": "Integrable_N4_d1_mag",
+    "model": "Integrable",
+    "N": 4,
+    "d": 1,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.5,
+      "1": 0.44,
+      "2": 0.54,
+      "3": 0.48
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/5b886bcb-2a18-4038-9dad-2b52b32a5855"
+  },
+  {
+    "label": "Integrable_N4_d1_echo",
+    "model": "Integrable",
+    "N": 4,
+    "d": 1,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.28,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/48bbb787-3907-4a90-88e8-80d0b03aaeb1"
+  },
+  {
+    "label": "Integrable_N4_d3_mag",
+    "model": "Integrable",
+    "N": 4,
+    "d": 3,
+    "type": "mag",
+    "magnetizations": {
+      "0": -1.0,
+      "1": -0.98,
+      "2": -1.0,
+      "3": -0.94
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/26c34640-192c-4560-83ad-2318b12bfadf"
+  },
+  {
+    "label": "Integrable_N4_d3_echo",
+    "model": "Integrable",
+    "N": 4,
+    "d": 3,
+    "type": "echo",
+    "magnetizations": {
+      "0": 0.88,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/8f1ed3f9-6479-451f-b295-95f6213835c9"
+  },
+  {
+    "label": "Integrable_N4_d5_mag",
+    "model": "Integrable",
+    "N": 4,
+    "d": 5,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.34,
+      "1": 0.32,
+      "2": 0.2,
+      "3": 0.28
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/260d686e-4bf1-4df1-8d07-bac0db93fb53"
+  },
+  {
+    "label": "Integrable_N4_d5_echo",
+    "model": "Integrable",
+    "N": 4,
+    "d": 5,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.82,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/39799157-478c-441d-b887-852205d59275"
+  },
+  {
+    "label": "KI_chaotic_N4_d1_mag",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 1,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.42,
+      "1": 0.62,
+      "2": 0.66,
+      "3": 0.7
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/aaac91b1-1a64-4da0-b4a6-3b51ef85d29d"
+  },
+  {
+    "label": "KI_chaotic_N4_d1_echo",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 1,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.44,
+      "1": 0.96,
+      "2": 1.0,
+      "3": 0.98
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/3cc9e7b6-369f-41c8-81b2-58cab7653919"
+  },
+  {
+    "label": "KI_chaotic_N4_d3_mag",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 3,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.56,
+      "1": 0.32,
+      "2": 0.12,
+      "3": 0.36
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/9199286f-2726-4b56-9a7e-a9a1349c0e20"
+  },
+  {
+    "label": "KI_chaotic_N4_d3_echo",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 3,
+    "type": "echo",
+    "magnetizations": {
+      "0": -0.14,
+      "1": -0.26,
+      "2": 0.64,
+      "3": 0.9
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/ebf37bc5-b72f-42e6-8ab0-7b9e7fae4126"
+  },
+  {
+    "label": "KI_chaotic_N4_d5_mag",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 5,
+    "type": "mag",
+    "magnetizations": {
+      "0": 0.42,
+      "1": -0.28,
+      "2": -0.24,
+      "3": 0.64
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/f261263a-7c18-4812-ab34-982b0c6c229e"
+  },
+  {
+    "label": "KI_chaotic_N4_d5_echo",
+    "model": "KI_chaotic",
+    "N": 4,
+    "d": 5,
+    "type": "echo",
+    "magnetizations": {
+      "0": 0.0,
+      "1": -0.06,
+      "2": -0.22,
+      "3": 0.2
+    },
+    "n_shots": 100,
+    "task_arn": "arn:aws:braket:eu-north-1:266859254560:quantum-task/bf7f5a72-5664-44c1-b728-5f7ef41a554f"
+  }
+]
