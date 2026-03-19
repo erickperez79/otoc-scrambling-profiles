@@ -2,7 +2,7 @@
 
 **Paper 1b — Kaelion Project**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXXX.svg)](https://doi.org/10.5281/zenodo.19105623)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19105623.svg)](https://doi.org/10.5281/zenodo.19105623)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0006--3228--4847-brightgreen)](https://orcid.org/0009-0006-3228-4847)
 
